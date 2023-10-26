@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root{
+    --azul: #22D4FD;
+    --branco: #F6F6F6;
+    --preto: #000000;
+}
+
+body{
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.textos-titulo{
+    font-size: 2.25rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textos-paragrafo{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+strong{
+    color: var(--azul);
+}
+
+.react{
+    color: yellow;
+}
+
+.html{
+    color: orangered;
+}
+
+.css{
+    color: rgb(56, 103, 255);
+}
+
+.apresentacao{
+    padding: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.textos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-right: 1rem;
+}
+
+.botoes_a{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--preto);
+    font-size: 1.5rem;
+    width: 50%;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    color: var(--branco);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    margin-top: 0px;
+    outline-style: solid;
+    outline-color: #22D4FD;
+}
+
+.botoes_a:hover{
+    background: #1d1d1d;
+    
+}
+
+.convite-redes{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.7rem;
+
+}
+
+.rodape{
+    margin: 0;
+    color: var(--preto);
+    background-color: var(--azul);
+    padding: 1.5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+.menu_link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24;
+    color: var(--azul);
+    text-decoration: none;
+}
+
+.minha_cara{
+    width: 50%;
+    border-radius: 2rem;
+    border-color: var(--azul);
+    border-style: solid;
+}
+
+@media (max-width: 1200px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .textos{
+        text-align: center;
+    }
+
+    .cabecalho{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .textos{
+        width: auto; /* preenche todo o espaço disponivel */
+    }
+}
